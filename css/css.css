@@ -1,0 +1,268 @@
+/* Temporary */
+/* .container {
+  outline: 2px solid hotpink;
+} */
+
+/* Basic structure & Typography */
+html {
+  scroll-behavior: smooth;
+}
+:target:before {
+    content: "";
+    display: block;
+    height: 75px;
+    margin: -75px 0 0;
+}
+body {
+  background-color: #130717;
+  font-family: "Prompt", sans-serif;
+  color: #40d3e6;
+}
+h1, h2, h3, h4, h5 {
+  font-family: "Space Mono", monospace;
+  color: #40d3e6;
+  margin: 0;
+}
+h1 {
+  font-size: 64pt;
+  line-height: 50pt;
+}
+h2 {
+  font-size: 60pt;
+  line-height: 50pt;
+}
+h3{
+    font-size: 38pt;
+    line-height: 30pt;
+}
+h4 {
+  font-size: 20pt;
+}
+h5 {
+  font-size: 16pt;
+  line-height: 1.1em;
+  color: #cf4447 !important;
+}
+p {
+    font-weight: lighter;
+}
+section {
+    margin-top: 50px;
+}
+.aboutBlurb b, h4 {
+  color: #cf4447;
+}
+#about .container {
+  margin-top: 75px !important;
+}
+.container {
+  max-width: 90%;
+  margin: 0 auto;
+}
+.content {
+  width: 80%;
+  margin: 30px auto;
+}
+.left {
+  text-align: left;
+  padding: 10px;
+}
+.right {
+  text-align: right;
+  padding: 10px;
+}
+#ux .container, #contact .container{
+    border-right: 10px solid #40d3e6;
+    border-radius: 5px;
+    -webkit-box-shadow: inset -5px 0px 0px 0px #428A99; 
+    box-shadow: inset -5px 0px 0px 0px #428A99;
+}
+#illus .container{
+    border-left: 10px solid #40d3e6;
+    border-radius: 5px;
+    -webkit-box-shadow: inset 5px 0px 0px 0px #428A99; 
+    box-shadow: inset 5px 0px 0px 0px #428A99;
+}
+form {
+  margin: 0 auto;
+  padding: 15px;
+  width: 50%;
+  padding-bottom: 8vh;
+}
+input, textarea {
+    font-family: "Prompt", sans-serif;
+    border: none;
+    border-radius: 5px;
+    box-sizing: border-box;
+    color:#130717;
+    font-size: 12pt;
+}
+input:focus, textarea:focus {
+    -webkit-box-shadow: 0px 0px 5px 3px #40D3E6; 
+    box-shadow: 0px 0px 5px 3px #40D3E6;
+    outline:none;
+}
+input[type="text"] {
+  background-color: #428A99;
+  padding: 5px;
+  margin-bottom: 5px;
+  width: 100%;
+}
+input[type="submit"] {
+  float: right;
+  color: #40d3e6;
+  background-color: #7b518c;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+textarea {
+  background-color: #428A99;
+  padding: 5px;
+  margin-bottom: 5px;
+  width: 100%;
+  resize: none;
+}
+/* Make labels invisible, but legible to screen-readers */
+label {
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+}
+::placeholder {
+    color: #130717;
+    opacity: .6;
+}
+.form {
+  margin: 25px auto;
+  width: 60%;
+  margin-bottom: 0;
+}
+
+/* Links & Buttons */
+button {
+  color: #40d3e6;
+  background-color: #7b518c;
+  border-radius: 5px;
+  border: none;
+  outline: 0px solid #7b518c;
+  height: 50px;
+  padding: 10px 15px;
+  font-family: "Prompt", sans-serif;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.75s ease-in-out;
+}
+button:hover,
+input[type="submit"]:hover {
+  background-color: #4b2c58;
+  outline: 5px solid #40d3e6;
+  transition-duration: 0.35s;
+}
+button:active,
+input[type="submit"]:active {
+  position: relative;
+  top: 1px;
+}
+
+/* Desktop Menu */
+header {
+  background-color: #7b518c;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  height: 55px;
+  overflow: hidden;
+}
+ul {
+  display: flex;
+  list-style: none;
+  margin-top: 12px;
+  gap: 5%;
+  max-width: 75%;
+}
+.navigation a {
+  color: #40d3e6;
+  font-size: 16pt;
+  font-family: "Space Mono", monospace;
+  text-decoration: none;
+}
+.navigation a:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+}
+.menuContainer {
+  display: none;
+}
+
+/* Sections */
+.study,
+.illus,
+.about {
+  display: flex;
+  gap: 15px;
+  padding: 0 5px;
+  margin-top: 0;
+  margin-bottom: 35px;
+}
+.thumbnail {
+  min-width: 33%;
+  min-height: 100%;
+  flex-grow: 1;
+}
+.blurb {
+  flex-grow: 0;
+}
+#contact {
+    margin-bottom: 75px;
+}
+.aboutBlurb {
+    align-self: end;
+    margin-bottom: 5px;
+}
+
+/* Images */
+.heroImg {
+    background-image: url(../img/me.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-width: 50%;
+    min-height: 55vh;
+}
+
+.zine {
+    background-image: url(../img/zine_th.jpg);
+    background-size: cover;
+    background-position: left;
+    background-repeat: no-repeat;
+}
+.night {
+    background-image: url(../img/nightcrawler_th.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.sonikitty {
+    background-image: url(../img/sonikitty_th.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.bulgar {
+    background-image: url(../img/bulgar_th.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.placeholder {
+    background-image: url(../img/placeholder.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
