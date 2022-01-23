@@ -442,6 +442,8 @@ ul {
     position: fixed;
     top: 55px;
     width: 100%;
+  }
+  .down {
     height: calc(100vh - 55px);
     -webkit-backdrop-filter: blur(3px) brightness(70%);
     backdrop-filter: blur(3px) brightness(70%);
