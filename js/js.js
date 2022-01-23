@@ -18,4 +18,18 @@
 
 $(".chevron").on("click", function(){
     $(".menu").slideToggle(700);
+    if ($(".chevron i").hasClass("fa-chevron-down")) {
+        $(".chevron i").removeClass("fa-chevron-down").addClass("fa-chevron-up");
+    }
+    else {
+        $(".chevron i").removeClass("fa-chevron-up").addClass("fa-chevron-down");
+    }
+});
+$(".menu li").on("click", function(){
+    $(".menu").slideUp(700);
+    if ($(".chevron i").hasClass("fa-chevron-up")) {
+        $(".chevron i").removeClass("fa-chevron-up").addClass("fa-chevron-down");
+    }
+    else {
+    }
 });

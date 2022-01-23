@@ -6,6 +6,7 @@
 /* Basic structure & Typography */
 html {
   scroll-behavior: smooth;
+  margin: 0;
 }
 :target:before {
   content: "";
@@ -17,6 +18,7 @@ body {
   background-color: #130717;
   font-family: "Prompt", sans-serif;
   color: #40d3e6;
+  margin: 0;
 }
 h1,
 h2,
@@ -53,11 +55,22 @@ p {
 section {
   margin-top: 50px;
 }
+footer {
+  position: relative;
+  bottom: 0px;
+  margin-top: 25px;
+  padding: 15px;
+  background-color: #7b518c;
+}
+.small {
+  font-size: 8pt;
+}
 .aboutBlurb b,
 h4 {
   color: #cf4447;
 }
-#about .container {
+#about .container,
+.newPage{
   margin-top: 75px !important;
 }
 .container {
@@ -88,6 +101,12 @@ h4 {
   border-radius: 5px;
   -webkit-box-shadow: inset 5px 0px 0px 0px #428a99;
   box-shadow: inset 5px 0px 0px 0px #428a99;
+}
+.newPage .container {
+  border-bottom: 10px solid #40d3e6;
+  border-radius: 5px;
+  -webkit-box-shadow: inset 0px -5px 0px 0px #428a99;
+  box-shadow: inset 0px -5px 0px 0px #428a99;
 }
 form {
   margin: 0 auto;
@@ -176,9 +195,24 @@ input[type="submit"]:active {
   position: relative;
   top: 1px;
 }
+a {
+  color: inherit;
+  cursor: pointer;
+  text-decoration: underline;
+}
+a:hover {
+  text-decoration: underline;
+  text-decoration-color: #cf4447;
+  text-decoration-thickness: 2px;
+}
+a:active {
+  background-color: #40d3e6;
+  color: #7b518c;
+  text-decoration-color: #7b518c;
+}
 
 /* Desktop Menu */
-header {
+.navigation {
   background-color: #7b518c;
   position: fixed;
   width: 100%;
@@ -187,8 +221,9 @@ header {
   height: 55px;
   overflow: hidden;
 }
-header .mobile {
+.mobile {
   display: none;
+
 }
 ul {
   display: flex;
@@ -223,7 +258,7 @@ ul {
 }
 .thumbnail {
   min-width: 33%;
-  min-height: 100%;
+  min-height: 300px;
   flex-grow: 1;
 }
 .blurb {
@@ -342,9 +377,6 @@ ul {
     margin: 0;
     padding: 0;
   }
-  header .navigation{
-    display: none;
-  }
   ul {
     position: relative;
     width: 90%;
@@ -359,10 +391,10 @@ ul {
   .menu h2 {
     position: relative;
     text-align: left;
-    top: 55px;
+    padding-left: 15px;
   }
-  #about .container {
-      margin-top: 15px !important;
+  section #about {
+      margin-top: 60px !important;
   }
   .study, .illus, .about {
     flex-direction: column;
@@ -377,7 +409,7 @@ ul {
   .heroImg {
     background-image: url(../img/me_mobile.png);
     min-height: 33vh;
-    background-position: top;
+    background-position: center;
     background-size: cover;
     order: -1;
     border-radius: 50%;
@@ -390,24 +422,29 @@ ul {
     top: -58px;
     text-shadow: 5px 5px 5px rgba(19, 7, 23, 1);
   }
+  /* a {
+    padding: 15px;
+  } */
   /* Mobile Menu */
-  header .mobile {
+
+  /* .mobile  */
+  .navigation {
     display: unset;
-    height: 75px;
+    height: 55px;
     background-color: #7b518c;
+    z-index: 255;
   }
   .toggle {
     color: #40D3E6;
   }
   .menuContainer {
     display: unset;
-    position: absolute;
-    top: 0;
+    position: fixed;
+    top: 55px;
     width: 100%;
-    height: 100vh;
+    height: calc(100vh - 55px);
     -webkit-backdrop-filter: blur(3px) brightness(70%);
     backdrop-filter: blur(3px) brightness(70%);
-    z-index: 100;
   }
   .menu {
     display: none;
@@ -439,7 +476,8 @@ ul {
 .menu li {
     font-size: 24pt;
     line-height: 40pt;
-    padding: 0px 5px;
+    padding: 0px 10px;
+    margin-bottom: 35px;
 }
 .chevron {
     position: relative;
@@ -452,6 +490,23 @@ ul {
     font-size: 26pt;
     line-height: 0pt;
     cursor: pointer;
-    /* top: 88.5%; */
+  }
+  .chevron a{
+    font-size: 26pt;
+    line-height: 0pt;
+  }
+  .chevron a:hover{
+    background-color: unset;
+  }
+  .menu a {
+    color: #40d3e6;
+    font-size: 26pt;
+    line-height: 40pt;
+    font-family: "Space Mono", monospace;
+    text-decoration: none;
+  }
+  .menu a:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
   }
 }
