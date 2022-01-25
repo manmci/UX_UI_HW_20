@@ -24,7 +24,7 @@ $(".chevron").on("click", function(){
     }
     else {
         $(".chevron i").removeClass("fa-chevron-up").addClass("fa-chevron-down");
-        $("div .menuContainer").removeClass("down");
+        $(".menuContainer").removeClass("down");
     }
 });
 $(".menu li").on("click", function(){
