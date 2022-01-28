@@ -305,6 +305,12 @@ ul {
   background-position: center;
   background-repeat: no-repeat;
 }
+.e-ya {
+  background-image: url(../img/e_ya.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
 .placeholder {
   background-image: url(../img/placeholder.png);
   background-size: cover;
@@ -427,10 +433,9 @@ ul {
   } */
   /* Mobile Menu */
 
-  /* .mobile  */
   .navigation {
     display: unset;
-    height: 55px;
+    height: 25px;
     background-color: #7b518c;
     z-index: 255;
   }
@@ -440,11 +445,11 @@ ul {
   .menuContainer {
     display: unset;
     position: fixed;
-    top: 55px;
+    top: 25px;
     width: 100%;
   }
   .down {
-    height: calc(100vh - 55px);
+    height: calc(100vh - 25px);
     -webkit-backdrop-filter: blur(3px) brightness(70%);
     backdrop-filter: blur(3px) brightness(70%);
   }
