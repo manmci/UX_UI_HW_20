@@ -332,9 +332,9 @@ ul {
   }
 }
 
-/* Tablet */
+/* Tablet & MD Desktop */
 
-@media only screen and (max-width: 810px) {
+@media only screen and (max-width: 852px) {
   .menuContainer {
     display: none;
   }
