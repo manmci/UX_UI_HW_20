@@ -24,7 +24,6 @@
 
     <title>Manny McIvor - UX/UI Designer & Illustrator - ¡Edúcate Ya! Responsive Web Redesign</title>
 </head>
-<section 
 <body>
     <header class="navigation">
     <!-- Desktop/LG Tablet Menu -->
@@ -78,7 +77,7 @@
         </div>
         <div class="col-sm-9 col-md-9 col-lg-10">
                   <div data-spy="scroll" data-target="#caseNav" data-offset="0" class="scrollspy-example">
-                    <img src="img/e_ya.png" alt="Educate Ya Logo (placeholder)" width ="100%" id="org">
+                    <center><img src="img/ux/eya/e-ya_logo.png" alt="Educate Ya Logo" width="33%" id="org"></center>
                     <h4>About the Organization</h4>
                     <p>Edúcate Ya is a non-profit organization in Portland, OR that focuses on helping the Latino Community by offering English Classes, information about STI prevention, social events, and more.</p>
                     <p>Founder Rafael Arellano created the organization in 2000 after he noticed a lack of Latinos in leadership roles. Since then, Edúcate Ya has worked to educate Latinos in how to navigate the Western system to achieve better jobs and access to healthcare.</p>
@@ -86,24 +85,82 @@
                     <p>This was a group design project. I worked with two other designers from my bootcamp. While the entire process was collaborative, I focused on user interviews, interaction design, color design, wireframing, prototyping, and illustration. My team worked in Figma, Procreate, and Google Slides.</p>
                     <p>We had three weeks (30 hours of in-class time) to take this design from a blank page to a fully responsive prototype, and if you ask me, we nailed it.</p>
                     <h4 id="research">User Reasearch</h4>
-                    <p>As a team, we conducted an interview with the founder of Edúcate Ya, as well as their social media manager, who oversaw the website as well.</p>
-                    <p>I conducted four potential user interviews over social media. 3 of 4 interviewees were from the Latin American community, with origins from different cultures.</p>
+                    <p>As a team, we conducted an interview with the founder of Edúcate Ya, as well as their social media manager, who oversees the website.</p>
+                    <p>I conducted four potential user interviews over social media. 3 of 4 interviewees were from the Latin American community, with origins from different cultures and countries.</p>
+                    <p>We learned that until April 2022, Edúcate Ya is offering free English language classes to Latinos. However, this was not featured anywhere on the website. Additionally, like most non-profits, Edúcate Ya relies on donor funding. While they did have a modal that popped up upon a user's first visit, we noticed that users had a hard time trying to find where they could donate to the organization. Edúcate Ya's website was almost entirely bilingual, but having copy duplicated made the page feel cluttered and overwhelming to read through. Users generally liked the website, but we identified a few key areas for improvements.</p>
                     <p>Using insights from the interviews, we defined our proto persona, Oscar, with an Empathy Map to get a better idea of his throughts, feelings, needs, and goals.</p>
-                    <img src="img/e_ya.png" alt="Educate Ya Logo (placeholder)" width ="100%">
+                    <img src="img/ux/eya/empathy_map.jpg" alt="Empathy Map" width ="100%">
                     <h4 id="definition">Definition</h4>
-                    <p>Taking a mobile-first design approach, my teammates and I each individually did mobile wireframe sketches, then combined aspects of our ideas into a single wireframe/lo-fi prototype.</p>
-                    <img src="img/e_ya.png" alt="Educate Ya Logo (placeholder)" width ="100%">
+                    <p>With our research complete and our data analyzed, my team and I were able to defined the scope of our project.</p>
+                    <h5>Problem Statement</h5>
+                    <blockquote>"By redesigning Edúcate Ya's website to be more visually engaging, we can help increase engagement with and participation in the organization's classes and events.</blockquote>
+                    <blockquote>We also believe that a website that is easier to maintain for the organization and more delightful for people outside of the organization to use will result in an increase in donations to Edúcate Ya."</blockquote>
                     <h4 id="ideation">Ideation</h4>
                     <p>To explore how to best design for users like Oscar, and create a website that would better aid Edúcate Ya of achieving its mission, we created a storyboard. This was a collaborative illustration project with my teammate, Carlos. We took turns drawing panels, and I inked and added finishing touches.</p>
-                    <img src="img/e_ya.png" alt="Educate Ya Logo (placeholder)" width ="100%">
+                    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img class="d-block w-100" src="img/ux/eya/board-1.jpg" alt="Oscar the line cook is having another busy day at work.">
+                            <div class="carousel-caption d-none d-md-block">
+                                <p>Oscar the line cook is having another busy day at work.</p>
+                          </div>
+                          </div>
+                          <div class="carousel-item">
+                            <img class="d-block w-100" src="img/ux/eya/board-2.jpg" alt="Fed up with busy work, he decides he wants a change!">
+                            <div class="carousel-caption d-none d-md-block">
+                                <p>Fed up with busy work, he decides he wants a change!</p>
+                          </div>
+                          </div>
+                          <div class="carousel-item">
+                            <img class="d-block w-100" src="img/ux/eya/board-3.jpg" alt="Third slide">
+                            <div class="carousel-caption d-none d-md-block">
+                                <p>He remembers an organization he heard of from a friend who invited him to one of their events.</p>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <img class="d-block w-100" src="img/ux/eya/board-4.jpg" alt="Third slide">
+                            <div class="carousel-caption d-none d-md-block">
+                                <p>After work, he gets on his computer...</p>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <img class="d-block w-100" src="img/ux/eya/board-5.jpg" alt="Third slide">
+                            <div class="carousel-caption d-none d-md-block">
+                                <p>&hellip; and discovers that they are offering free English classes!</p>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <img class="d-block w-100" src="img/ux/eya/board-7.jpg" alt="Third slide">
+                            <div class="carousel-caption d-none d-md-block">
+                                <p>Two years later, Oscar is now a successful business owner and running his own food truck!</p>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <img class="d-block w-100" src="img/ux/eya/board-8.jpg" alt="Third slide">
+                            <div class="carousel-caption d-none d-md-block">
+                                <p>He gives back to Edúcate Ya, hoping his gift will help someone else.</p>
+                            </div>
+                          </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="sr-only">Next</span>
+                        </a>
+                      </div>
                     <h4 id="prototyping">Prototyping</h4>
+                    <p>Now that we knew Oscar a little bit better, my team was ready to tackle the look and feel of the site. We started with the way the site was organized.</p>
+                    <p> Some users had mentioned feeling a overwhelmed by the menu. There were a lot of sections, and they didn't know where to start. So, we slimmed down the menu by half. By implementing sub-sections we were also able to make it easier to find sections users had difficulties finding during our initial testing.</p>
+                    <img src="img/ux/eya/sitemap.png" alt="Empathy Map" width ="100%">
+                    <center><img src="img/ux/eya/footer.png" alt="Empathy Map" width ="75%"></center><br>
+                    <p>Now that we knew how we wanted to structure the website, it was time to decide on its look and feel.</p>
                     <h4 id="testing">Testing</h4>
                     <h4 id="final-proto">Final Prototype</h4>
                     <h4 id="conclusion">Conclision & Opportunities</h4>
             </div>
-            <!-- <img src=".." alt="Sample text">
-            <div class="#">
-                <p>asdf asdf asdf asdf</p> -->
             </div>
         </div>
         </div>

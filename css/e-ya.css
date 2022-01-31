@@ -27,7 +27,28 @@ header {
 }
 a:active {
     top: 1px;
-  }
+}
+p {
+    text-align: justify;
+}
+.container p {
+    text-indent: 3em;
+}
+blockquote {
+    margin-left: 3em;
+    text-align: justify;
+}
+/* Carousel tweaks */
+.carousel-caption p {
+    text-indent: unset;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: rgba(66, 138, 153, 0.8);
+}
+
+
+/* Mobile */
   @media only screen and (max-width: 580px) {
       #caseNav {
           display: none;
